@@ -7,7 +7,7 @@
           <span class="logo-text">易表格</span>
         </div>
         <nav class="nav">
-          <a href="#features" class="nav-link">功能特点</a>
+          <a href="#features" class="nav-link" @click="handleFeaturesClick">功能特点</a>
           <a href="#users" class="nav-link" @click="handleUsersClick">适用人群</a>
           <button class="btn-primary">立即体验</button>
         </nav>
@@ -17,6 +17,21 @@
 </template>
 
 <script setup>
+const handleFeaturesClick = (e) => {
+  e.preventDefault()
+  const featuresSection = document.getElementById('features')
+  if (featuresSection) {
+    const headerOffset = 80
+    const elementPosition = featuresSection.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
+
 const handleUsersClick = (e) => {
   e.preventDefault()
   const usersSection = document.getElementById('users')

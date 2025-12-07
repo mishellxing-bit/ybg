@@ -12,11 +12,11 @@
             </div>
             <div class="cta-feature">
               <span class="check-icon">✓</span>
-              <span>10秒生成数据图表</span>
+              <span>10秒智能处理数据</span>
             </div>
             <div class="cta-feature">
               <span class="check-icon">✓</span>
-              <span>免费开始使用</span>
+              <span>免费使用</span>
             </div>
           </div>
           <button class="cta-button">

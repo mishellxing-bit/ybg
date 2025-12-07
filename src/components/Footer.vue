@@ -13,7 +13,7 @@
         <div class="footer-links">
           <div class="link-group">
             <h4 class="link-title">产品</h4>
-            <a href="#" class="link-item">功能特点</a>
+            <a href="#features" class="link-item" @click="handleFeaturesClick">功能特点</a>
             <a href="#" class="link-item">使用案例</a>
             <a href="#" class="link-item">定价方案</a>
           </div>
@@ -44,6 +44,20 @@
 </template>
 
 <script setup>
+const handleFeaturesClick = (e) => {
+  e.preventDefault()
+  const featuresSection = document.getElementById('features')
+  if (featuresSection) {
+    const headerOffset = 80
+    const elementPosition = featuresSection.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+  }
+}
 </script>
 
 <style scoped>

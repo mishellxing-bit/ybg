@@ -34,8 +34,8 @@ const features = [
     title: '自动处理Excel',
     description: '支持上传CSV和XLSX格式，上传文件后自动清洗表格数据',
     highlights: [
-      '支持多个Excel表格上传',
-      '每个Excel可多Sheet',
+      '支持多个Excel文件上传',
+      '每个Excel可支持多Sheet页',
       '文件可分组管理'
     ]
   },
@@ -58,8 +58,8 @@ const features = [
     title: '数据可视化图表',
     description: '输入指令词后，轻松创建图表，将数据转化为多种图表类型',
     highlights: [
-      '柱状图、饼图、折线图',
-      '散点图等多种类型',
+      '支持简单图表柱状图、饼图、折线图等',
+      '支持组合图表等多种类型',
       '10秒内获得专属图表'
     ]
   },
