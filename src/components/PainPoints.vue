@@ -1,5 +1,5 @@
 <template>
-  <section class="pain-points">
+  <section id="users" class="pain-points">
     <div class="container">
       <div class="carousel-container">
         <div class="carousel-content">
@@ -138,12 +138,18 @@ const resetAutoPlay = () => {
 
 onMounted(() => {
   startAutoPlay()
+  
+  // 监听从 Header 触发的切换事件
+  window.addEventListener('switchToUsers', () => {
+    goToSlide(1) // 切换到第2页（为谁而设计）
+  })
 })
 
 onUnmounted(() => {
   if (autoPlayInterval) {
     clearInterval(autoPlayInterval)
   }
+  window.removeEventListener('switchToUsers', () => {})
 })
 
 const users = [
@@ -172,6 +178,10 @@ const users = [
     description: '需要处理财务报表、销售数据但没有专业数据团队的小企业经营者'
   }
 ]
+
+defineExpose({
+  goToSlide
+})
 </script>
 
 <style scoped>

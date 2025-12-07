@@ -18,7 +18,7 @@
               <span>免费开始使用</span>
               <span class="arrow">→</span>
             </button>
-            <button class="btn-large btn-secondary">观看演示</button>
+            <button class="btn-large btn-secondary" @click="openDemoModal">观看演示</button>
           </div>
           <div class="hero-stats">
             <div class="stat-item">
@@ -69,10 +69,24 @@
       <div class="bg-gradient-1"></div>
       <div class="bg-gradient-2"></div>
     </div>
+    
+    <DemoModal :isOpen="isDemoModalOpen" @close="closeDemoModal" />
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import DemoModal from './DemoModal.vue'
+
+const isDemoModalOpen = ref(false)
+
+const openDemoModal = () => {
+  isDemoModalOpen.value = true
+}
+
+const closeDemoModal = () => {
+  isDemoModalOpen.value = false
+}
 </script>
 
 <style scoped>

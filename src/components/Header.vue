@@ -8,7 +8,7 @@
         </div>
         <nav class="nav">
           <a href="#features" class="nav-link">功能特点</a>
-          <a href="#users" class="nav-link">适用人群</a>
+          <a href="#users" class="nav-link" @click="handleUsersClick">适用人群</a>
           <button class="btn-primary">立即体验</button>
         </nav>
       </div>
@@ -17,6 +17,27 @@
 </template>
 
 <script setup>
+const handleUsersClick = (e) => {
+  e.preventDefault()
+  const usersSection = document.getElementById('users')
+  if (usersSection) {
+    // 平滑滚动到目标位置
+    const headerOffset = 80 // header 高度
+    const elementPosition = usersSection.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
+    
+    // 延迟一点时间等待滚动，然后切换到目标用户轮播页
+    setTimeout(() => {
+      // 触发自定义事件通知轮播切换到第2页（为谁而设计）
+      window.dispatchEvent(new CustomEvent('switchToUsers'))
+    }, 500)
+  }
+}
 </script>
 
 <style scoped>
