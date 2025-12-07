@@ -114,7 +114,7 @@ const handleUsersClick = (e) => {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 196, 140, 0.4);
 }
 
 @media (max-width: 768px) {

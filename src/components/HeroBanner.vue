@@ -151,7 +151,7 @@ const closeDemoModal = () => {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 196, 140, 0.4);
 }
 
 .btn-primary .arrow {
@@ -236,13 +236,13 @@ const closeDemoModal = () => {
 }
 
 .chat-bubble.user {
-  background: linear-gradient(135deg, #E0E7FF, #DDD6FE);
+  background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
   align-self: flex-end;
   max-width: 80%;
 }
 
 .chat-bubble.ai {
-  background: linear-gradient(135deg, #DBEAFE, #BFDBFE);
+  background: linear-gradient(135deg, #ECFDF5, #D1FAE5);
   align-self: flex-start;
   max-width: 80%;
 }
@@ -252,7 +252,7 @@ const closeDemoModal = () => {
 }
 
 .demo-chart {
-  background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
+  background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
   border-radius: 12px;
   padding: 20px;
   height: 200px;
@@ -337,7 +337,7 @@ const closeDemoModal = () => {
   right: -20%;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(102, 126, 234, 0.15), transparent);
+  background: radial-gradient(circle, rgba(0, 196, 140, 0.15), transparent);
   animation: pulse 8s ease-in-out infinite;
 }
 
@@ -347,7 +347,7 @@ const closeDemoModal = () => {
   left: -20%;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(118, 75, 162, 0.15), transparent);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15), transparent);
   animation: pulse 8s ease-in-out infinite;
   animation-delay: 4s;
 }

@@ -145,7 +145,7 @@ const users = [
 }
 
 .pursuit-section {
-  background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
+  background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
   padding: 48px;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -179,7 +179,7 @@ const users = [
 
 .pursuit-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 196, 140, 0.2);
 }
 
 .pursuit-icon {

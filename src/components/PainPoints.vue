@@ -353,7 +353,7 @@ defineExpose({
 
 .pursuit-item-large:hover {
   transform: translateY(-12px);
-  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 196, 140, 0.25);
 }
 
 .pursuit-icon-large {
@@ -413,7 +413,7 @@ defineExpose({
 }
 
 .pursuit-section {
-  background: linear-gradient(135deg, #F0F9FF, #E0F2FE);
+  background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
   padding: 48px;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -447,7 +447,7 @@ defineExpose({
 
 .pursuit-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 196, 140, 0.2);
 }
 
 .pursuit-icon {
@@ -464,7 +464,7 @@ defineExpose({
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
   border-radius: 20px;
   padding: 48px;
-  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 196, 140, 0.3);
 }
 
 .solution-content {

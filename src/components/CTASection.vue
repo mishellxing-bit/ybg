@@ -73,7 +73,7 @@
 <style scoped>
 .cta-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+  background: linear-gradient(135deg, #00C48C 0%, #10B981 100%);
   position: relative;
   overflow: hidden;
 }
@@ -231,7 +231,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667EEA, #764BA2);
+  background: linear-gradient(135deg, #00C48C, #10B981);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,7 +252,7 @@
 }
 
 .demo-message.user .message-bubble {
-  background: linear-gradient(135deg, #E0E7FF, #DDD6FE);
+  background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
 }
 
 .message-bubble p {
